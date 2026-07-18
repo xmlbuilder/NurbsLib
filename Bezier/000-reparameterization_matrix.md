@@ -5,7 +5,7 @@
 | Function | Purpose | Reparam Formula | Meaning |
 |---|---|---|---|
 | on_reparameterization_matrix_unit | Unit-domain reparameterization | u = a + (b-a)t | old polynomial f(u)를 new parameter t ∈ [0,1] 기준으로 재전개 |
-| on_reparameterization_matrix | General-domain reparameterization | u = α·up + β | old polynomial f(u)를 new parameter up ∈ [a,b] 기준으로 재전개 |
+| on_reparameterization_matrix | General-domain reparameterization | u = α · up + β | old polynomial f(u)를 new parameter up ∈ [a,b] 기준으로 재전개 |
 
 즉:
 
@@ -18,7 +18,7 @@ f(u)\rightarrow f(a+(b-a)t)
 - 일반 버전은:
 
 ```math
-f(u)\rightarrow f(\alpha up+\beta)
+f(u)\rightarrow f(\alpha · up+\beta)
 ```
 
 ---
@@ -132,7 +132,7 @@ local parameter [0,1] 위에서 재표현
 ## ✔ 치환식
 
 ```math
-u=\alpha up+\beta
+u=\alpha · up+\beta
 ```
 
 조건:
@@ -176,7 +176,7 @@ g(up)=f(\alpha up+\beta)
 즉:
 
 ```math
-g(up)=\sum_{j=0}^{p} A'_j up^j
+g(up)=\sum_{j=0}^{p} A'_j · up^j
 ```
 
 이며:
@@ -245,7 +245,7 @@ up=1 \Rightarrow u=b
 이므로:
 
 ```math
-u=a+(b-a)up
+u=a+(b-a)· up
 ```
 
 가 되기 때문이다.
@@ -303,7 +303,7 @@ f(u)\rightarrow f(a+(b-a)t),\quad t\in[0,1]
 - 일반 버전:
 
 ```math
-f(u)\rightarrow f(\alpha up+\beta),\quad up\in[a,b]
+f(u)\rightarrow f(\alpha · up+\beta),\quad up\in[a,b]
 ```
 
 - 즉 둘 다:
